@@ -54,7 +54,6 @@ class Solution {
 
         }
         
-        // shiftRow(left, mid, right);
         for (int i = 0; i < n; i++) {
             Deque<Integer> tmp = mid.pollFirst();
             for (int j = 0; j < m; j++) {
