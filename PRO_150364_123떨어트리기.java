@@ -137,7 +137,7 @@ class Tree {
         for (int i : visitList) {
             int idx = i - 1;
             if (cntArr[idx] > 1) { // 이 노드에 더 와야하는 경우
-                cntArr[idx]--;
+                cntArr[idx]--; // 한 장 사용
                 if (target[idx] <= cntArr[idx] * 3) { // 1을 넣어도 다음에 커버 가능
                     list.add(1);
                     target[idx] -= 1;
