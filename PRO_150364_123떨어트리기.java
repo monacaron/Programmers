@@ -100,7 +100,7 @@ class Tree {
 
         if (node.count <= target[curIdx] && target[curIdx] <= node.count * 3) { // 1, 2, 3 중 하나가 도착함
             isAble[curIdx] = true; // 카드 채움 조건 만족
-        } else if (isAble[curIdx]) { // 불가능한 상황 : 이전까지 ok but 이번에 추가하면 불만족
+        } else if (isAble[curIdx]) { // 가장 적은 수를 사용해야 하므로 조건을 만족하면 더 추가 xxx
             return false; 
         }
         
